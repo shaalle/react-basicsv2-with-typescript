@@ -4,6 +4,13 @@ interface Props {
     age: number;
     isMarried: boolean;
     friends: string[];
+    country: string;
+}
+
+export enum Country {
+    Brazil= 'Brazil',
+    Canada= 'Canada',
+    France= 'France',
 }
 export const Person = (props: Props) => {
     return <div>
@@ -14,6 +21,7 @@ export const Person = (props: Props) => {
          {props.friends.map((firend: string) => {
             return <h1>{firend}</h1>
         })} 
+        <h1>Country: {props.country}</h1>
        
     </div>
 }

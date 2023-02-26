@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Person} from './components/Person';
+import {Person, Country} from './components/Person';
 function App() {
   return (
     <div className="App"> 
@@ -9,7 +9,8 @@ function App() {
       email='Sucdi@gmail.com'
       age={21}
       isMarried={false}
-      friends= {["Salmo", "Nasro", "Jamaal"]} />
+      friends= {["Salmo", "Nasro", "Jamaal"]} 
+      country = {Country.France}/>
     
     </div>
   );
